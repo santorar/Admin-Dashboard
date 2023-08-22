@@ -1,0 +1,58 @@
+:root{
+  --main-bg-side: #e11d48;
+  --main-bg: #e2e8f0;
+  --main-bg-header: #fff;
+  --main-fr-light: #eff;
+}
+/* General Style */
+body{
+  font-family: 'Roboto', sans-serif;
+}
+img{
+  width: 7rem;
+}
+.page-container{
+  display: grid;
+  grid-template-columns: 23% 77%;
+  grid-template-rows: 5% 90%;
+}
+/* Header Style */
+.head{
+  background: var(--main-bg-header);
+  grid-area: 1 / 2 / span 1 / span 1;
+  display: grid;
+  grid-template-rows: repeat(2,50%);
+}
+/* Side Bar Style */
+.title{
+  padding-left: 20px;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.side-bar{
+  background: var(--main-bg-side);
+  grid-area: 1 / 1 / span 2 /span 1;
+  color: var(--main-fr-light);
+}
+.options{
+  margin-top: 2rem;
+  padding-left: 20px;
+  display: grid;
+  grid-template-rows: repeat(10,3rem);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.option{
+  list-style: none;
+}
+.option-link{
+  color: var(--main-fr-light);
+  text-decoration: none;
+}
+/* Projects Style */
+.container{
+  background: var(--main-bg);
+  grid-area: 2 / 2 / span 1 / span 1;
+}
+/* Announcements Style */
+/* Trending Style */
